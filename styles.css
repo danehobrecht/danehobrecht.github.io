@@ -1,6 +1,7 @@
 /* Globals */
 
 html {
+	line-height: 100%;
 	font-family: Georgia;
 	scroll-behavior: smooth;
 	background-color: #ffffffff;
