@@ -1,11 +1,13 @@
 /* Globals */
 
 html {
-	line-height: 120%;
+	line-height: 116%;
 	font-family: Georgia;
 	scroll-behavior: smooth;
 	background-color: #ffffffff;
 }
+
+i { color: #666666 }
 
 h1 {
 	font-size: 2.4rem;
