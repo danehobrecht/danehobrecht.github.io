@@ -1,13 +1,14 @@
 /* Globals */
 
 html {
+	font-size: 1rem;
 	line-height: 116%;
 	scroll-behavior: smooth;
 	font-family: Georgia, serif;
 	background-color: #ffffffff;
 }
 
-i { color: #666666 }
+a { color: #000000ff; }
 
 h1 {
 	font-size: 2.4rem;
@@ -18,15 +19,15 @@ h2 { font-size: 1.2rem; }
 
 h3 { font-size: 1.08rem; }
 
-pre {
-	width: 50%;
-	font-size: 1rem;
-	color: #ffffffff;
-}
+/* Classes and IDs */
 
-mark {
-	color: #ffffffff;
-	background-color: #000000ff;
-}
+.passive { color: #666666ff; }
 
-.clean { color: #000000ff; }
+#terminal {
+	box-sizing: border-box;
+	padding: 0px 8px 0px 8px;
+	border: 2px solid #555555ff;
+	font-family: Lucida Console;
+	b, pre { color: #000000ff; }
+	.project { * { margin: 8px 0px 8px 0px; } }
+}
