@@ -50,3 +50,5 @@ header { text-align: center; }
 	pre { margin-top: -16px; }
 	.project { * { margin: 8px 0px 8px 0px; } }
 }
+
+@media screen and (max-width: 480px) { h1 { font-size: 0.84rem; } }
