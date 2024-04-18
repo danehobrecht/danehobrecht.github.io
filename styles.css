@@ -19,15 +19,25 @@ h2 { font-size: 1.2rem; }
 
 h3 { font-size: 1.08rem; }
 
+header { text-align: center; }
+
 /* Classes and IDs */
 
 .passive { color: #666666ff; }
 
-#name { text-decoration: none; text-align: center; }
+#name {
+	text-decoration: none;
+	display: inline-block;
+	&:hover {
+		opacity: 0.48;
+	}
+}
 
 #navigation {
-	text-align: center;
 	& a { margin: 0px 4px 0px 4px; }
+	& a:hover {
+		opacity: 0.48;
+	}
 }
 
 #terminal {
