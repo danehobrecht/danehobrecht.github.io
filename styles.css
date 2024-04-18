@@ -25,6 +25,8 @@ h3 { font-size: 1.08rem; }
 
 #name { text-decoration: none; }
 
+#active { font-weight: 700; }
+
 #terminal {
 	box-sizing: border-box;
 	padding: 0px 8px 0px 8px;
