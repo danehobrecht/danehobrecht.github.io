@@ -23,6 +23,8 @@ h3 { font-size: 1.08rem; }
 
 .passive { color: #666666ff; }
 
+#name { text-decoration: none; }
+
 #terminal {
 	box-sizing: border-box;
 	padding: 0px 8px 0px 8px;
@@ -31,4 +33,5 @@ h3 { font-size: 1.08rem; }
 	b { color: #000000ff; }
 	pre { margin-top: -16px; }
 	.project { * { margin: 8px 0px 8px 0px; } }
+	a { white-space: normal; }
 }
