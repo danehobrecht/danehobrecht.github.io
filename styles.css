@@ -11,7 +11,7 @@ html {
 a { color: #000000ff; }
 
 h1 {
-	font-size: 2.4rem;
+	font-size: 1.2rem;
 	line-height: 100%;
 }
 
@@ -23,9 +23,12 @@ h3 { font-size: 1.08rem; }
 
 .passive { color: #666666ff; }
 
-#name { text-decoration: none; }
+#name { text-decoration: none; text-align: center; }
 
-#active { font-weight: 700; }
+#navigation {
+	text-align: center;
+	& a { margin: 0px 4px 0px 4px; }
+}
 
 #terminal {
 	box-sizing: border-box;
