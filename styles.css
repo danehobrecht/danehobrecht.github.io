@@ -34,9 +34,11 @@ header { text-align: center; }
 }
 
 #navigation {
-	& a { margin: 0px 4px 0px 4px; }
-	& a:hover {
-		opacity: 0.48;
+	& a {
+		margin: 0px 4px 0px 4px;
+		&:hover {
+			opacity: 0.48;
+		}
 	}
 }
 
