@@ -33,7 +33,7 @@ h3 { font-size: 1.08rem; }
 	border: 2px solid #555555ff;
 	font-family: monospace, Lucida Console, Courier New;
 	b { color: #000000ff; }
+	a { white-space: normal; }
 	pre { margin-top: -16px; }
 	.project { * { margin: 8px 0px 8px 0px; } }
-	a { white-space: normal; }
 }
