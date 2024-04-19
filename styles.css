@@ -3,7 +3,9 @@
 html {
 	font-size: 1rem;
 	line-height: 116%;
+	overflow-y: scroll;
 	scroll-behavior: smooth;
+	overflow-wrap: break-word;
 	font-family: Georgia, serif;
 	background-color: #ffffffff;
 }
