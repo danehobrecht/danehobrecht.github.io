@@ -45,6 +45,11 @@ header { text-align: center; }
 	}
 }
 
+#content {
+	line-height: 100%;
+	text-align: center;
+}
+
 #terminal {
 	box-sizing: border-box;
 	padding: 0px 8px 0px 8px;
@@ -57,8 +62,8 @@ header { text-align: center; }
 }
 
 @media screen and (max-width: 480px) { 
-	h1 { font-size: 0.84rem; }
-	nav {
+	header {
+		& h1 { font-size: 0.84rem; }
 		& pre { font-size: 0.84rem; }
 	}
 }
