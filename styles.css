@@ -8,6 +8,7 @@ html {
 	overflow-wrap: break-word;
 	font-family: Georgia, serif;
 	background-color: #ffffffff;
+	-webkit-tap-highlight-color: transparent;
 }
 
 a { color: #000000ff; }
