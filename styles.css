@@ -20,7 +20,7 @@ pre { line-height: 100%; }
 
 nav {
 	& a {
-		font-size: 1.08em;
+		font-size: 1.16rem;
 		font-weight: 900;
 		text-decoration: none;
 		display: inline-block;
@@ -57,7 +57,7 @@ header { text-align: center; }
 }
 
 @media screen and (max-width: 480px) { 
-	h1 { font-size: 0.84rem; } 
+	h1 { font-size: 0.84rem; }
 	nav {
 		& pre { font-size: 0.84rem; }
 	}
