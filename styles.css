@@ -37,10 +37,12 @@ header { text-align: center; }
 
 #navigation {
 	& a {
-		margin: 0px 4px 0px 4px;
-		&:hover {
-			opacity: 0.48;
-		}
+		font-weight: 900;
+		text-decoration: none;
+		display: inline-block;
+		margin: -16px 4px 0px 4px;
+		&:hover { opacity: 0.48; }
+		& #depressed { opacity: 0.48; }
 	}
 }
 
