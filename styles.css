@@ -19,6 +19,13 @@ h3 { font-size: 1.08rem; }
 
 pre { line-height: 100%; }
 
+img {
+	padding: 4px;
+	max-width: 196px;
+	margin-top: 16px;
+	border: 4px double #000000ff;
+}
+
 nav {
 	& a {
 		font-size: 1.16rem;
