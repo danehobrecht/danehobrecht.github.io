@@ -69,9 +69,8 @@ header { text-align: center; }
 	.project { * { margin: 8px 0px 8px 0px; } }
 }
 
-@media screen and (max-width: 480px) { 
-	header {
-		& h1 { font-size: 0.84rem; }
-		& pre { font-size: 0.84rem; }
-	}
-}
+@media screen and (min-width: 401px) and (max-width: 440px) { header { & pre { font-size: 0.96rem; } } }
+
+@media screen and (min-width: 360px) and (max-width: 400px) { header { & pre { font-size: 0.84rem; } } }
+
+@media screen and (max-width: 359px) { header { & pre { font-size: 0.72rem; } } }
