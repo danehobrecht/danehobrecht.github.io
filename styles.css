@@ -62,8 +62,19 @@ header { text-align: center; }
 	& img {
 		width: 24px;
 		height: 24px;
+		&:hover { opacity: 0.64; }
 	}
-	& img:hover { opacity: 0.64; }
+	& a {
+		font-weight: 700;
+		line-height: 108%;
+		font-size: 1.64rem;
+		text-decoration: none;
+		display: inline-block;
+		margin: 0px 2px 0px 2px;
+		font-family: sans-serif;
+		&:hover { opacity: 0.64; }
+	}
+	& * { vertical-align: middle; }
 }
 
 #terminal {
