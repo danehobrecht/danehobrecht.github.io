@@ -66,12 +66,12 @@ header { text-align: center; }
 	}
 	& a {
 		font-weight: 700;
-		line-height: 108%;
+		line-height: 116%;
 		font-size: 1.64rem;
 		text-decoration: none;
 		display: inline-block;
-		margin: 0px 2px 0px 2px;
 		font-family: sans-serif;
+		margin: -2px 2px 0px 2px;
 		&:hover { opacity: 0.64; }
 	}
 	& * { vertical-align: middle; }
