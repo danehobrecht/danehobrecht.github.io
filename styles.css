@@ -51,6 +51,11 @@ header { text-align: center; }
 	text-align: center;
 }
 
+#resume {
+	margin: auto;
+	max-width: 768px;
+}
+
 #headshot {
 	padding: 4px;
 	max-width: 196px;
