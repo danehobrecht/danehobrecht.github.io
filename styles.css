@@ -84,14 +84,8 @@ nav {
 		&:hover { opacity: 0.64; }
 	}
 	& a {
-		font-weight: 700;
-		line-height: 116%;
-		font-size: 1.64rem;
-		text-decoration: none;
 		display: inline-block;
-		font-family: sans-serif;
-		margin: -2px 2px 0px 2px;
-		&:hover { opacity: 0.64; }
+		margin: 0px 2px 0px 2px;
 	}
 	& * { vertical-align: middle; }
 }
