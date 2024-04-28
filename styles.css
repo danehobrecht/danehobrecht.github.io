@@ -12,7 +12,10 @@ html {
 	-webkit-tap-highlight-color: transparent;
 }
 
-a { color: #000000ff; }
+a {
+	color: #000000ff;
+	&:hover { opacity: 0.64; }
+}
 
 h1, h2 { font-size: 1.2rem; }
 
@@ -27,7 +30,6 @@ nav {
 		text-decoration: none;
 		display: inline-block;
 		margin: -16px 4px 0px 4px;
-		&:hover { opacity: 0.64; }
 		& #depressed { opacity: 0.64; }
 	}
 }
@@ -49,7 +51,6 @@ nav {
 #name {
 	text-decoration: none;
 	display: inline-block;
-	&:hover { opacity: 0.64; }
 }
 
 #content {
@@ -79,7 +80,6 @@ nav {
 	& img {
 		width: 24px;
 		height: 24px;
-		&:hover { opacity: 0.64; }
 	}
 	& a {
 		display: inline-block;
@@ -94,10 +94,7 @@ nav {
 	padding: 0px 8px 0px 8px;
 	font-family: monospace, Lucida Console, Courier New;
 	b { color: #000000ff; }
-	a {
-		white-space: normal;
-		&:hover { opacity: 0.64; }
-	}
+	a { white-space: normal; }
 	pre {
 		margin-top: -16px;
 		text-shadow: 0.08px 0 0, 0 0.08px 0, 0 -0.08px 0, -0.08px 0 0;
