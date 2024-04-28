@@ -49,9 +49,7 @@ nav {
 #name {
 	text-decoration: none;
 	display: inline-block;
-	&:hover {
-		opacity: 0.64;
-	}
+	&:hover { opacity: 0.64; }
 }
 
 #content {
@@ -65,8 +63,8 @@ nav {
 	text-align: left;
 	/* Printable name */
 	& h1 {
+		padding-top: 8px;
 		font-size: 2.4rem;
-		margin: 40px 0px 40px 0px;
 	}
 }
 
