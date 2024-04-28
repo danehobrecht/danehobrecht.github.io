@@ -104,6 +104,8 @@ nav {
 	.project { * { margin: 8px 0px 8px 0px; } }
 }
 
+/* Media queries */
+
 @media screen and (max-width: 359px) { header { & pre { font-size: 0.72rem; } } }
 
 @media screen and (min-width: 401px) and (max-width: 440px) { header { & pre { font-size: 0.96rem; } } }
