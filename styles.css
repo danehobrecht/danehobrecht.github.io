@@ -94,7 +94,10 @@ nav {
 	padding: 0px 8px 0px 8px;
 	font-family: monospace, Lucida Console, Courier New;
 	b { color: #000000ff; }
-	a { white-space: normal; }
+	a {
+		white-space: normal;
+		&:hover { opacity: 0.64; }
+	}
 	pre {
 		margin-top: -16px;
 		text-shadow: 0.08px 0 0, 0 0.08px 0, 0 -0.08px 0, -0.08px 0 0;
