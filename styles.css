@@ -58,8 +58,8 @@ nav {
 .h-list {
 	margin-left: -40px;
 	li {
+		display: inline;
 		position: relative;
-		display: inline-block;
 		&:before { content: "\00a0\00a0\2022\00a0\00a0"; }
 		&:first-of-type:before { content: 'Technologies\00a0\00a0\25B8\00a0\00a0'; }
 	}
