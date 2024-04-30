@@ -20,6 +20,12 @@ h1, h2 { font-size: 1.2rem; }
 
 h3 { font-size: 1.08rem; }
 
+h4 {
+	margin: 0px;
+	font-weight: normal;
+	display: inline-block;
+}
+
 pre { line-height: 100%; }
 
 nav {
@@ -45,6 +51,18 @@ nav {
 	font-weight: 900;
 	text-align: center;
 	margin: 24px 0px 48px 0px;
+}
+
+.v-list { margin-left: -16px; }
+
+.h-list {
+	margin-left: -40px;
+	li {
+		position: relative;
+		display: inline-block;
+		&:before { content: "\00a0\00a0\2022\00a0\00a0"; }
+		&:first-of-type:before { content: '\00a0\00a0\25B8\00a0\00a0'; }
+	}
 }
 
 #name {
