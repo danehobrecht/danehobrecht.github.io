@@ -66,8 +66,8 @@ nav {
 }
 
 #name {
-	text-decoration: none;
 	display: inline-block;
+	text-decoration: none;
 }
 
 #resume {
