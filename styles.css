@@ -78,7 +78,7 @@ nav {
 	}
 	& a {
 		display: inline-block;
-		margin: 0px 2px 0px 2px;
+		margin: 0px 4px 0px 4px;
 	}
 	& * { vertical-align: middle; }
 }
