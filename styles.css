@@ -11,10 +11,14 @@ html {
 	-webkit-tap-highlight-color: transparent;
 }
 
+header { user-select: none; }
+
 a {
 	color: #000000ff;
 	&:hover { opacity: 0.64; }
 }
+
+h1 { margin: 0; }
 
 h1, h2 { font-size: 1.2rem; }
 
