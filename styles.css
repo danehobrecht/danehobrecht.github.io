@@ -50,6 +50,8 @@ nav {
 
 .passive { color: #666666ff; }
 
+.disabled { pointer-events: none; }
+
 .no-print { display: normal; }
 
 .shortcut {
