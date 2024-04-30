@@ -39,7 +39,7 @@ nav {
 		font-size: 1.16rem;
 		text-decoration: none;
 		display: inline-block;
-		margin: -16px 4px 0px 4px;
+		margin: -16px 8px 0px 8px;
 		& #depressed { opacity: 0.64; }
 	}
 }
