@@ -40,7 +40,6 @@ pre {
 
 nav {
 	& a {
-		font-weight: 900;
 		font-size: 1.16rem;
 		text-decoration: none;
 		display: inline-block;
@@ -62,7 +61,13 @@ nav {
 .shortcut {
 	font-weight: 900;
 	text-align: center;
-	margin: 24px 0px 48px 0px;
+	margin-top: 24px;
+}
+
+.jump-scroll {
+	text-decoration: none;
+	display: inline-block;
+	margin-bottom: 16px;
 }
 
 .v-list { margin-left: -16px; }
@@ -98,8 +103,6 @@ nav {
 		font-size: 2.4rem;
 	}
 }
-
-#poi { font-size: 1rem; }
 
 #headshot {
 	padding: 4px;
