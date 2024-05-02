@@ -73,7 +73,8 @@ nav {
 }
 
 #not-found {
-	font-size: 1.6rem;
+	margin: 0;
+	font-size: 2rem;
 	font-family: serif;
 	margin-bottom: 24px;
 }
