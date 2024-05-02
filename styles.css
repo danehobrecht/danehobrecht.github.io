@@ -1,14 +1,9 @@
 /* Globals */
 
 html {
-	/* Consider adding:
-	 * margin: 0;
-	 * padding: 0;
-	 */
 	font-size: 1rem;
 	text-align: center;
 	overflow-y: scroll;
-	scroll-behavior: smooth;
 	overflow-wrap: break-word;
 	font-family: Georgia, serif;
 	background-color: #ffffffff;
