@@ -1,6 +1,10 @@
 /* Globals */
 
 html {
+	/* Consider adding:
+	 * margin: 0;
+	 * padding: 0;
+	 */
 	font-size: 1rem;
 	text-align: center;
 	overflow-y: scroll;
@@ -23,12 +27,13 @@ h1, h2 { font-size: 1.2rem; }
 h3 { font-size: 1.08rem; }
 
 h4 {
-	margin: 0px;
+	margin: 0;
 	font-weight: normal;
 	display: inline-block;
 }
 
 pre {
+	font-weight: 900;
 	line-height: 100%;
 	user-select: none;
 }
@@ -131,11 +136,11 @@ nav {
 
 /* Media queries */
 
-@media screen and (max-width: 359px) { header { & pre { font-size: 0.72rem; } } }
+@media screen and (max-width: 359px) { pre { font-size: 0.72rem; } }
 
-@media screen and (min-width: 401px) and (max-width: 440px) { header { & pre { font-size: 0.96rem; } } }
+@media screen and (min-width: 401px) and (max-width: 440px) { pre { font-size: 0.96rem; } }
 
-@media screen and (min-width: 360px) and (max-width: 400px) { header { & pre { font-size: 0.84rem; } } }
+@media screen and (min-width: 360px) and (max-width: 400px) { pre { font-size: 0.84rem; } }
 
 @media screen and (min-width: 359px) and (max-width: 440px) { .shortcut { display: none; } }
 
