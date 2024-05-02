@@ -72,6 +72,12 @@ nav {
 	}
 }
 
+#not-found {
+	font-size: 1.6rem;
+	font-family: serif;
+	margin-bottom: 24px;
+}
+
 #name {
 	display: inline-block;
 	text-decoration: none;
