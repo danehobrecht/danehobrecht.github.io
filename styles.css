@@ -54,15 +54,15 @@ nav {
 .no-print { display: normal; }
 
 .shortcut {
+	margin-top: 24px;
 	font-weight: 900;
 	text-align: center;
-	margin-top: 24px;
 }
 
 .jump-scroll {
+	margin-bottom: 16px;
 	text-decoration: none;
 	display: inline-block;
-	margin-bottom: 16px;
 }
 
 .v-list { margin-left: -16px; }
