@@ -99,6 +99,24 @@ nav {
 	}
 }
 
+#portfolio {
+	margin-top: 16px;
+	& figure {
+		margin: auto;
+		& img {
+			width: 92vw;
+			height: auto;
+			padding: 4px;
+			max-width: 720px;
+			border: 4px double #000000ff;
+		}
+		& figcaption {
+			margin-top: 8px;
+			font-size: 1.08rem;
+		}
+	}
+}
+
 #headshot {
 	padding: 4px;
 	max-width: 216px;
