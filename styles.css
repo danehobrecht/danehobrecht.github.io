@@ -107,7 +107,7 @@ nav {
 			width: 92vw;
 			height: auto;
 			padding: 4px;
-			max-width: 720px;
+			max-width: 768px;
 			border: 4px double #000000ff;
 		}
 		& figcaption {
