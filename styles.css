@@ -61,8 +61,8 @@ nav {
 
 .jump-scroll {
 	margin-bottom: 16px;
-	text-decoration: none;
 	display: inline-block;
+	text-decoration: none;
 }
 
 .v-list { margin-left: -16px; }
@@ -100,7 +100,7 @@ nav {
 }
 
 #portfolio {
-	margin-top: 16px;
+	margin: 16px 0px -16px 0px;
 	& figure {
 		margin: auto;
 		& img {
