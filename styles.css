@@ -104,6 +104,7 @@ nav {
 	margin: 16px 0px -16px 0px;
 	& figure {
 		margin: auto;
+		& a { &:hover { opacity: 1; } }
 		& img {
 			width: 92vw;
 			height: auto;
@@ -114,6 +115,7 @@ nav {
 		& figcaption {
 			margin-top: 8px;
 			font-size: 1.08rem;
+			& a { &:hover { opacity: 0.64; } }
 		}
 		& blockquote {
 			max-width: 540px;
