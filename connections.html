@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<!-- Basic Metadata -->
-		<title>"DANE HOBRECHT"/Home</title>
+		<title>"DANE HOBRECHT"/Connections</title>
 		<meta name="theme-color" content="#ffffff">
 		<meta name="viewport" content="width=device-width">
 		<meta name="msapplication-TileColor" content="#ffffff">
@@ -71,11 +71,12 @@
 |/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|</pre>
 			</h1>
 			<nav>
-				<a class="disabled" tabindex="-1" href="index.html">
-					<pre id="depressed" aria-label='ASCII art of a depressed computer key depicting the current "Home" page.'>
+				<a tabindex="-1" href="index.html">
+					<pre aria-label='ASCII art of a depressed computer key depicting the current "Home" page.'>
  ______ 
 ||Home||
-||____||</pre>
+||____||
+|/____\|</pre>
 				</a><a href="resume.html">
 					<pre aria-label='ASCII art of a computer key depicting the "Resume" page.'>
  ________ 
@@ -91,16 +92,32 @@
 				</a>
 			</nav>
 		</header>
-		<img id="headshot" alt="Headshot of Dane Hobrecht laughing in a park." src="profile.webp">
-		<p><i>Designer, Developer, Doxologist</i></p>
-		<a id="connections" href="connections.html"><p>Connections (2)</p></a>
-		<div id="socials">
-			<a target="_blank" href="mailto:dhobrech@uci.edu">
-				<img alt="At symbol linking to Dane Hobrecht's personal email." src="at-sign.svg">
-			</a>
-			<a target="_blank" href="https://github.com/danehobrecht">
-				<img alt="GitHub logo linking to Dane Hobrecht's GitHub profile." src="github-mark.svg">
-			</a>
-		</div>
+	<body>
+		<table id="cns-table">
+			<!-- Header row -->
+			<tr id="header-row">
+				<th>Name</th>
+				<th>Title</th>
+				<th>Organization</th>
+			</tr>
+			<!-- Input row -->
+			<tr id="input-row">
+				<th><input type="text" name="name" placeholder="Cave Johnson, Ph.D."></th>
+				<th><input type="text" name="profile" placeholder="Founder"></th>
+				<th><input type="text" name="title" placeholder="Aperture Science, Inc."></th>
+			</tr>
+			<!-- Entry rows -->
+			<tr>
+				<td><a target="_blank" href="https://www.google.com/search?q=Gregory+Smedley%2C+Ph.D.">Gregory Smedley, Ph.D.</a></td>
+				<td>CEO</td>
+				<td>One-Cycle Control, Inc.</td>
+			</tr>
+			<tr>
+				<td><a target="_blank" href="https://www.google.com/search?q=Sebastian+Fernandez%2C+M.S.">Sebastian Fernandez, B.S.</a></td>
+				<td>Researcher</td>
+				<td>The Vanderwal Lab</td>
+			</tr>
+		</table>
+		<input type="submit" value="Submit">
 	</body>
 </html>

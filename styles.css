@@ -91,6 +91,58 @@ nav {
 	text-decoration: none;
 }
 
+#connections {
+	color: grey;
+	margin-top: 16px;
+	font-weight: normal;
+}
+
+table {
+	width: 100%;
+	margin: auto;
+	max-width: 768px;
+	margin-top: 16px;
+	table-layout: fixed;
+	#input-row {
+		::placeholder {
+			font-size: 1rem;
+			font-family: Georgia;
+		}
+		th {
+			input[type="text"] {
+				padding: 0;
+				width: 100%;
+				font-size: 1rem;
+				font-family: Georgia;
+				box-sizing: content-box;
+				border: 1px solid #00000000;
+				&:placeholder-shown { border: 1px solid grey; }
+			}
+		}
+	}
+	#header-row { font-family: monospace; }
+	th, td {
+		padding: 8px;
+		text-align: left;
+		border: 2px solid black;
+		a { font-weight: normal; }
+	}
+}
+
+input[type="submit"] {
+	padding: 8px;
+	font-size: 1em;
+	margin-top: 16px;
+	font-weight: 900;
+	font-family: monospace;
+	border: 2px solid black;
+	background-color: #ffffff00;
+	&:hover { 
+		opacity: 0.64;
+		cursor: pointer;
+	}
+}
+
 #resume {
 	margin: auto;
 	max-width: 768px;
