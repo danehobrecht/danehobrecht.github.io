@@ -72,7 +72,7 @@
 			</h1>
 			<nav>
 				<a tabindex="-1" href="index.html">
-					<pre aria-label='ASCII art of a depressed computer key depicting the current "Home" page.'>
+					<pre aria-label='ASCII art of a computer key depicting the "Home" page.'>
  ______ 
 ||Home||
 ||____||
@@ -94,30 +94,36 @@
 		</header>
 	<body>
 		<table id="cns-table">
-			<!-- Header row -->
+			<!-- Headers -->
 			<tr id="header-row">
-				<th>Name</th>
-				<th>Title</th>
-				<th>Organization</th>
+				<th><label for="name">Name</label></th>
+				<th><label for="title">Title</label></th>
+				<th><label for="organization">Organization</label></th>
 			</tr>
-			<!-- Input row -->
+			<!-- Inputs -->
 			<tr id="input-row">
-				<th><input type="text" name="name" placeholder="Cave Johnson, Ph.D."></th>
-				<th><input type="text" name="profile" placeholder="Founder"></th>
-				<th><input type="text" name="title" placeholder="Aperture Science, Inc."></th>
+				<td><input type="text" name="name" placeholder="Cave Johnson, Ph.D."></td>
+				<td><input type="text" name="title" placeholder="Founder"></td>
+				<td><input type="text" name="organization" placeholder="Aperture Science, Inc."></td>
 			</tr>
-			<!-- Entry rows -->
+			<!-- Entries -->
 			<tr>
-				<td><a target="_blank" href="https://www.google.com/search?q=Gregory+Smedley%2C+Ph.D.">Gregory Smedley, Ph.D.</a></td>
+				<td>Gregory Smedley, Ph.D.</td>
 				<td>CEO</td>
 				<td>One-Cycle Control, Inc.</td>
 			</tr>
 			<tr>
-				<td><a target="_blank" href="https://www.google.com/search?q=Sebastian+Fernandez%2C+M.S.">Sebastian Fernandez, B.S.</a></td>
+				<td>Sebastian Fernandez, B.S.</td>
 				<td>Researcher</td>
 				<td>The Vanderwal Lab</td>
 			</tr>
 		</table>
-		<input type="submit" value="Submit">
+		<button type="submit">
+			<pre aria-label='ASCII art of a computer key depicting a "Submit" button.'>
+ ________ 
+||Submit||
+||______||
+|/______\|</pre>
+		</button>
 	</body>
 </html>
