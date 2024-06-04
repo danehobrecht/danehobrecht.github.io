@@ -93,37 +93,39 @@
 			</nav>
 		</header>
 	<body>
-		<table id="cns-table">
-			<!-- Headers -->
-			<tr id="header-row">
-				<th><label for="name">Name</label></th>
-				<th><label for="title">Title</label></th>
-				<th><label for="organization">Organization</label></th>
-			</tr>
-			<!-- Inputs -->
-			<tr id="input-row">
-				<td><input type="text" name="name" placeholder="Cave Johnson, Ph.D."></td>
-				<td><input type="text" name="title" placeholder="Founder"></td>
-				<td><input type="text" name="organization" placeholder="Aperture Science, Inc."></td>
-			</tr>
-			<!-- Entries -->
-			<tr>
-				<td>Gregory Smedley, Ph.D.</td>
-				<td>CEO</td>
-				<td>One-Cycle Control, Inc.</td>
-			</tr>
-			<tr>
-				<td>Sebastian Fernandez, B.S.</td>
-				<td>Researcher</td>
-				<td>The Vanderwal Lab</td>
-			</tr>
-		</table>
-		<button type="submit">
-			<pre aria-label='ASCII art of a computer key depicting a "Submit" button.'>
+		<form action="/submit" method="POST">
+			<table id="cns-table">
+				<!-- Headers -->
+				<tr id="header-row">
+					<th><label for="name">Name</label></th>
+					<th><label for="title">Title</label></th>
+					<th><label for="organization">Organization</label></th>
+				</tr>
+				<!-- Inputs -->
+				<tr id="input-row">
+					<td><input type="text" name="name" placeholder="Cave Johnson, Ph.D."></td>
+					<td><input type="text" name="title" placeholder="Founder"></td>
+					<td><input type="text" name="organization" placeholder="Aperture Science, Inc."></td>
+				</tr>
+				<!-- Entries -->
+				<tr>
+					<td>Gregory Smedley, Ph.D.</td>
+					<td>CEO</td>
+					<td>One-Cycle Control, Inc.</td>
+				</tr>
+				<tr>
+					<td>Sebastian Fernandez, B.S.</td>
+					<td>Researcher</td>
+					<td>The Vanderwal Lab</td>
+				</tr>
+			</table>
+			<button type="submit">
+				<pre aria-label='ASCII art of a computer key depicting a "Submit" button.'>
  ________ 
 ||Submit||
 ||______||
 |/______\|</pre>
-		</button>
+			</button>
+		</form>
 	</body>
 </html>
