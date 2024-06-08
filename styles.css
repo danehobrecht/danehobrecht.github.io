@@ -48,7 +48,7 @@ nav {
 
 .print { display: none; }
 
-.passive { color: #666666ff; }
+.passive { color: #666666ff; font-weight: normal; }
 
 .disabled { pointer-events: none; }
 
@@ -88,56 +88,6 @@ nav {
 #name {
 	display: inline-block;
 	text-decoration: none;
-}
-
-#network {
-	color: #666666ff;
-	margin-top: 16px;
-	font-weight: normal;
-}
-
-button {
-	margin: 0;
-	padding: 0;
-	border: none;
-	font-size: 1rem;
-	background-color: #00000000;
-	& pre:hover {
-		opacity: 0.64;
-		cursor: pointer;
-	}
-}
-
-table {
-	width: 100%;
-	margin: auto;
-	max-width: 768px;
-	margin-top: 16px;
-	table-layout: fixed;
-	#input-row {
-		::placeholder {
-			font-size: 1rem;
-			font-family: Georgia;
-		}
-		td {
-			input[type="text"] {
-				padding: 0;
-				width: 100%;
-				font-size: 1rem;
-				font-family: Georgia;
-				box-sizing: content-box;
-				border: 1px solid #00000000;
-				&:placeholder-shown { border: 1px solid grey; }
-			}
-		}
-	}
-	#header-row { font-family: monospace; }
-	th, td {
-		padding: 8px;
-		text-align: left;
-		border: 2px solid black;
-		a { font-weight: normal; }
-	}
 }
 
 #resume {
