@@ -13,7 +13,10 @@ html {
 a {
 	color: #000000ff;
 	font-weight: 900;
-	&:hover { opacity: 0.64; }
+	&:hover {
+		opacity: 0.64;
+		text-decoration: none;
+	}
 }
 
 h1 { margin: 0; }
