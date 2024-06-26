@@ -73,9 +73,9 @@ nav {
 .no-print { display: normal; }
 
 .shortcut {
-	margin-top: 24px;
 	font-weight: 900;
 	text-align: center;
+	margin-bottom: 4px;
 }
 
 .jump-scroll {
