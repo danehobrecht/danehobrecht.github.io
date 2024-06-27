@@ -45,6 +45,7 @@ pre {
 		/***/
 	font-weight: 900;
 	line-height: 100%;
+	display: inline-block;
 	background-color: #ffffffa3;
 }
 
@@ -68,7 +69,7 @@ nav {
 
 .no-print { display: normal; }
 
-.shortcut { margin: 8px 0px 32px 0px; }
+.shortcut { margin: 8px auto 24px auto; }
 
 .jump-scroll {
 	margin-bottom: 16px;
