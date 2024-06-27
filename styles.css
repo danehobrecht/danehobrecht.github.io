@@ -5,17 +5,13 @@ html {
 	text-align: center;
 	overflow-y: scroll;
 	overflow-wrap: break-word;
+	background-size: 24px 24px;
 	font-family: Georgia, serif;
 	background-color: #ffffffff;
 	-webkit-tap-highlight-color: transparent;
-	background-color: #ffffffff;
-	background-image: linear-gradient(rgba(244, 244, 250, .8) 1px, transparent 0),
-					  linear-gradient(#f4f4fa 1px, transparent 0),
-					  linear-gradient(90deg, rgba(244,244,250,.8) 1px, transparent 0),
-					  linear-gradient(90deg, #f4f4fa 1px, transparent 0),
-					  linear-gradient(transparent 3px, #ffffff 0, #ffffff 94px, transparent 0),
-					  linear-gradient(90deg, #f4f4fa 3px, transparent 0, transparent 94px, #f4f4fa 0);
-	background-size: 24px 24px, 96px 96px, 24px 24px, 96px 96px, 96px 96px, 96px 96px;
+	background-image:
+		linear-gradient(#f4f4faff 1px, transparent 0),
+		linear-gradient(90deg, #f4f4faff 1px, transparent 0);
 }
 
 a {
