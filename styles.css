@@ -168,6 +168,61 @@ nav {
 	.project { * { margin: 8px 0px 8px 0px; } }
 }
 
+/* "Peter Says" */
+@font-face {
+	font-family: "HOUSE3009";
+	src: url("assets/fonts/HOUSE3009 Spaceage-Heavy-Round Regular.otf");
+}
+
+#peter-says {
+	margin: auto;
+	color: #ffffffff;
+	max-width: 768px;
+	text-align: left;
+	font-family: Georgia;
+	background: #000000ff;
+	padding: 0px 4px 0px 4px;
+	& hr { color: #ffffffff; }
+	& pre {
+		margin: 0;
+		font-size: 0.92em;
+		font-family: "HOUSE3009";
+		background-color: #00000000;
+	}
+	& header {
+		text-align: center;
+		& nav {
+			margin-bottom: 24px;
+			font-family: "HOUSE3009";
+			& a { color: #ffffffff; }
+		}
+	}
+	#demonstration {
+		width: 100%;
+		text-align: center;
+		border-radius: 16px;
+		background-color: #ffffffff;
+		img {
+			max-width: 50%;
+			width: 240px;
+			margin: 32px 0px 32px 0px;
+		}
+	}
+	& h1 {
+		margin: 0.67em;
+		font-size: 2em;
+	}
+	& h2 {
+		font-size: 1.32em;
+		font-family: "HOUSE3009";
+	}
+	& footer { text-align: center; }
+	#background-and-significance { color: #3edd4bff; /* Simon green */ }
+	#existing-solutions-and-gap-analysis { color: #dd4b3eff; /* Simon red */ }
+	#proposed-solution-and-the-implementation { color: #ffea37ff /* Simon yellow */ }
+	#limitations-and-future-plans { color: #4b3eddff; /* Simon blue */ }
+}
+
 /* Media queries */
 
 @media screen and (max-width: 359px) { pre { font-size: 0.72rem; } }
