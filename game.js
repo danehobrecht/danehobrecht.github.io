@@ -1,73 +1,126 @@
 var level = 0;
+var timeoutID;
 var started = false;
 var gamePattern = [];
+var isGameOver = false;
+var lastActionTime = 0;
+var soundPlaying = false;
 var userClickedPattern = [];
-var buttonColours = ["red", "blue", "green", "yellow"];
+var buttons = ["btn-bttm-left", "btn-bttm-right", "btn-top-right", "btn-top-left"];
 
-// Play corresponding sound
-function playSound(name) { new Audio(name + ".mp3").play(); }
+// Play a sound
+function playSound(button) {
+	if (soundPlaying) return;
+	soundPlaying = true;
+	var audio = new Audio("assets/sounds/" + button + ".mp3");
+	audio.play().finally(() => soundPlaying = false);
+}
 
-// Init
+// Get a random button
+function getRandomButton() { return buttons[Math.floor(Math.random() * buttons.length)]; }
+
+// Show the pattern to the user
+function showPattern() {
+	if (isGameOver) return;
+	let index = 0;
+	$(".btn").prop("disabled", true);
+	function showNext() {
+		if (index < gamePattern.length) {
+			var button = gamePattern[index];
+			$("#" + button).fadeIn(100).fadeOut(100).fadeIn(100);
+			playSound(button);
+			timeoutID = setTimeout(showNext, 1000);
+			index++;
+		} else {
+			$(".btn").prop("disabled", false);
+		}
+	}
+
+	showNext();
+}
+
+// Handle user button press
+function handleUserClick(button) {
+	if (isGameOver || !started) return;
+	userClickedPattern.push(button);
+	playSound(button);
+	animatePress(button);
+	checkAnswer(userClickedPattern.length - 1);
+}
+
+// Check the user's answer
+function checkAnswer(index) {
+	if (isGameOver) return;
+	if (gamePattern[index] === userClickedPattern[index]) {
+		if (userClickedPattern.length === gamePattern.length) { setTimeout(nextSequence, 1000); }
+	} else { gameOver(); }
+}
+
+// Animate button press
+function animatePress(button) {
+	$("#" + button).addClass("pressed");
+	setTimeout(() => $("#" + button).removeClass("pressed"), 150);
+}
+
+// Start a new game sequence
 function nextSequence() {
+	if (isGameOver) return;
 	userClickedPattern = [];
 	level++;
-	$("#level-title").text(level); // Update score
-	var randomChosenColour = buttonColours[Math.floor(Math.random() * 4)];
-	gamePattern.push(randomChosenColour);
-	function showNextColor(index = 0) {
-		if (index < gamePattern.length) {
-			var color = gamePattern[index];
-			$("#" + color).fadeIn(100).fadeOut(100).fadeIn(100);
-			playSound(color);
-			setTimeout(() => showNextColor(index + 1), 1000);
+	$("#score").text(level);
+	gamePattern.push(getRandomButton());
+	showPattern();
+}
+
+// Handle game over
+function gameOver() {
+	if (isGameOver) return;
+	isGameOver = true;
+	$(".btn").prop("disabled", true);
+	clearTimeout(timeoutID);
+	var index = 0;
+	function playNextSound() {
+		if (index < buttons.length) {
+			var button = buttons[index];
+			$("#" + button).fadeIn(100).fadeOut(100).fadeIn(100);
+			playSound(button);
+			index++;
+			setTimeout(playNextSound, 300);
+		} else {
+			$("#score").text("0").addClass("game-over").delay(1000).queue(function(next) {
+				$("#score").removeClass("game-over");
+				startOver();
+				next();
+			});
 		}
 	}
-	showNextColor();
+
+	playNextSound();
 }
 
-// Animate pressed button
-function animatePress(currentColour) {
-	$("#" + currentColour).addClass("pressed");
-	setTimeout(() => $("#" + currentColour).removeClass("pressed"), 150);
-}
-
-// Check user's answer
-function checkAnswer(currentLevel) {
-	if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
-		if (userClickedPattern.length === gamePattern.length) {
-			setTimeout(nextSequence, 1000);
-		}
-	} else {
-		playSound("wrong");
-		$("body").addClass("game-over").delay(200).queue(function(next) {
-			$("body").removeClass("game-over");
-			$("#level-title").text("Game Over. Press any key to Restart.");
-			startOver();
-			next();
-		});
-	}
-}
-
-// Start over
+// Reset the game
 function startOver() {
 	level = 0;
-	gamePattern = [];
 	started = false;
+	gamePattern = [];
+	userClickedPattern = [];
+	isGameOver = false;
+	$(".btn").prop("disabled", false);
+	lastActionTime = 0;
 }
 
-// Event listeners for user interactions
+// Event listener for button clicks
 $(".btn").click(function() {
-	var userChosenColour = $(this).attr("id");
-	userClickedPattern.push(userChosenColour);
-	playSound(userChosenColour);
-	animatePress(userChosenColour);
-	checkAnswer(userClickedPattern.length - 1);
-});
-
-$(document).keypress(function() {
+	var clickedButton = $(this).attr("id");
+	var currentTime = Date.now();
+	if (isGameOver || (currentTime - lastActionTime < 100)) return;
+	lastActionTime = currentTime;
 	if (!started) {
-		$("#level-title").text(level);
+		startOver();
+		$("#score").text(level);
 		nextSequence();
 		started = true;
+	} else {
+		handleUserClick(clickedButton);
 	}
 });

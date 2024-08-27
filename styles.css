@@ -196,26 +196,94 @@ nav {
 		}
 	}
 	#demonstration {
-		width: 100%;
+		margin: 0;
+		padding: 0;
 		text-align: center;
-		border-radius: 16px;
-		outline: 2px solid #000000ff;
-		background-color: #ffffffff;
-		img {
-			max-width: 50%;
-			width: 240px;
-			margin: 32px 0px 32px 0px;
+		& img {
+			top: 46%;
+			left: 50%;
+			width: 128px;
+			position: absolute;
+			transform: translate(-50%, -50%);
 		}
 	}
 	& h1 {
+		font-weight: normal;
 		margin: 0.67em;
-		font-size: 2em;
+		font-size: 2.16rem;
 	}
 	& h2 {
 		font-size: 1.32em;
 		font-family: "HOUSE3009";
 	}
 	& footer { text-align: center; }
+	& #score {
+		top: 52%;
+		left: 50%;
+		width: 48px;
+		color: #ffffffff;
+		font-size: 1.2rem;
+		position: absolute;
+		border-radius: 8px;
+		outline-offset: 4px;
+		box-sizing:  border-box;
+		border: 2px solid #000000ff;
+		background-color: #000000ff;
+		outline: 2px solid #000000ff;
+		font-family: Monospace, serif;
+		transform: translate(-50%, -50%);
+	}
+	& .container {
+		margin: auto;
+		padding: 16px;
+		position: relative;
+		text-align: center;
+		border-radius: 16px;
+		display: inline-flex;
+		box-shadow: 0 8px #000000ff;
+		background-color: #ffffffff;
+		outline: 2px solid #000000ff;
+	}
+	& .column { float: left; }
+	& .btn {
+		width: 200px;
+		height: 200px;
+		cursor: pointer;
+		transition: 0.08s;
+		border-radius: 16%;
+		margin: 16px 6px 16px 6px;
+		box-shadow: 0 8px #000000ff;
+		outline: 2px solid #000000ff;
+		&:active {
+			transform: translateY(4px);
+			box-shadow: 0 3px #000000ff;
+		}
+	}
+	& #btn-top-left {
+		background-color: #dbe4eeff;
+		border-radius: 96% 16% 96% 16%;
+	}
+	& #btn-top-right {
+		background-color: #81a4cdff;
+		border-radius: 16% 96% 16% 96%;
+	}
+	& #btn-bttm-left {
+		background-color: #255799ff; /* UCI Blue */
+		border-radius: 16% 96% 16% 96%;
+	}
+	& #btn-bttm-right {
+		background-color: #3e7cb1ff;
+		border-radius: 96% 16% 96% 16%;
+	}
+	& .game-over {
+		color: #000000ff !important;
+		background-color: #ffffffff !important;
+	}
+	& .pressed {
+		opacity: 1;
+		transform: translateY(4px);
+		box-shadow: 0 4px #000000ff;
+	}
 }
 
 /* Media queries */

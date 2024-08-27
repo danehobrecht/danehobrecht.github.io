@@ -56,20 +56,25 @@
 			}
 		}
 		</script>
+		<script src="jquery-3.7.1.min.js"></script>
 	</head>
 	<body>
 		<header>
 			<h1><pre>PETER</pre> Says</h1>
-			<nav>
-				<a href="#background-and-significance">1</a>
-				<a href="#existing-solutions-and-gap-analysis">2</a>
-				<a href="#proposed-solution-and-the-implementation">3</a>
-				<a href="#limitations-and-future-plans">4</a>
-				<a href="#references">5</a>
-			</nav>
 		</header>
 		<div id="demonstration">
-			<img src="assets/images/peter-says-demonstration.png">
+			<div class="container">
+				<h2 id="score">0</h2>
+				<img src="assets/images/uci-health.svg">
+				<div class="column">
+					<div id="btn-top-left" class="btn"></div>
+					<div id="btn-bttm-left" class="btn"></div>
+				</div>
+				<div class="column">
+					<div id="btn-top-right" class="btn"></div>
+					<div id="btn-bttm-right" class="btn"></div>
+				</div>
+			</div>
 		</div>
 		<h2 id="background-and-significance">BACKGROUND AND SIGNIFICANCE</h2>
 		<p>
@@ -116,5 +121,6 @@
 		</ol>
 		<hr>
 		<footer><p>Dane Hobrecht &bull; Skylar Ransom &bull; Tiana Luong &bull; Diana Chea &bull; Angelo Valdez &bull; John Gadut &bull; Noah Zamora</p></footer>
+		<script src="game.js"></script>
 	</body>
 </html>
