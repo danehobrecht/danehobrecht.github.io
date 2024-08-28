@@ -177,10 +177,9 @@ nav {
 #peter-says {
 	margin: auto;
 	color: #000000ff;
+	padding: 0px 4px;
 	max-width: 768px;
 	text-align: left;
-	font-family: Montserrat, serif;
-	padding: 0px 4px 0px 4px;
 	& hr { color: #ffffffff; }
 	& pre {
 		margin: 0;
