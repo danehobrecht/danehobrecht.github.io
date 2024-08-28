@@ -179,7 +179,7 @@ nav {
 	color: #000000ff;
 	max-width: 768px;
 	text-align: left;
-	font-family: Georgia;
+	font-family: Montserrat, serif;
 	padding: 0px 4px 0px 4px;
 	& hr { color: #ffffffff; }
 	& pre {
@@ -197,14 +197,100 @@ nav {
 	}
 	#demonstration {
 		padding: 0px;
-		margin: 0px 0px 36px 0px;
+		margin: 0px 0px 16px 0px;
 		text-align: center;
+		& .container {
+			margin: 0px auto 24px auto;
+			padding: 16px;
+			position: relative;
+			text-align: center;
+			border-radius: 16px;
+			display: inline-flex;
+			box-shadow: 0 8px #000000ff;
+			background-color: #ffffffff;
+			outline: 2px solid #000000ff;
+		}
+		& #score {
+			top: 52%;
+			left: 50%;
+			width: 48px;
+			color: #ffffffff;
+			font-size: 1.2rem;
+			position: absolute;
+			border-radius: 8px;
+			outline-offset: 4px;
+			box-sizing:  border-box;
+			border: 2px solid #000000ff;
+			background-color: #000000ff;
+			outline: 2px solid #000000ff;
+			font-family: Monospace, serif;
+			transform: translate(-50%, -50%);
+		}
 		& img {
 			top: 46%;
 			left: 50%;
 			width: 128px;
 			position: absolute;
 			transform: translate(-50%, -50%);
+		}
+		& .column { float: left; }
+		& .btn {
+			width: 200px;
+			height: 200px;
+			cursor: pointer;
+			transition: 0.08s;
+			border-radius: 16%;
+			margin: 16px 6px 16px 6px;
+			box-shadow: 0 8px #000000ff;
+			outline: 2px solid #000000ff;
+			&:active {
+				transform: translateY(4px);
+				box-shadow: 0 3px #000000ff;
+			}
+		}
+		& #btn-top-left {
+			background-color: #dbe4eeff;
+			border-radius: 96% 16% 96% 16%;
+		}
+		& #btn-top-right {
+			background-color: #81a4cdff;
+			border-radius: 16% 96% 16% 96%;
+		}
+		& #btn-bttm-left {
+			background-color: #255799ff; /* UCI Blue */
+			border-radius: 16% 96% 16% 96%;
+		}
+		& #btn-bttm-right {
+			background-color: #3e7cb1ff;
+			border-radius: 96% 16% 96% 16%;
+		}
+		& .game-over {
+			color: #000000ff !important;
+			background-color: #ffffffff !important;
+		}
+		& .pressed {
+			opacity: 1;
+			transform: translateY(4px);
+			box-shadow: 0 4px #000000ff;
+		}
+		& .module {
+			margin: 8px;
+			width: 240px;
+			height: 120px;
+			align-items: center;
+			border-radius: 16px;
+			display: inline-flex;
+			justify-content: center;
+			background-color: #ffffffff;
+			font-size: 1.08rem;
+			outline: 2px dashed #000000ff;
+			& .led {
+				width: 24px;
+				height: 24px;
+				margin-right: 12px;
+				border-radius: 50%;
+				background-color: #555759;
+			}
 		}
 	}
 	& h1 {
@@ -217,73 +303,6 @@ nav {
 		font-family: "HOUSE3009";
 	}
 	& footer { text-align: center; }
-	& #score {
-		top: 52%;
-		left: 50%;
-		width: 48px;
-		color: #ffffffff;
-		font-size: 1.2rem;
-		position: absolute;
-		border-radius: 8px;
-		outline-offset: 4px;
-		box-sizing:  border-box;
-		border: 2px solid #000000ff;
-		background-color: #000000ff;
-		outline: 2px solid #000000ff;
-		font-family: Monospace, serif;
-		transform: translate(-50%, -50%);
-	}
-	& .container {
-		margin: auto;
-		padding: 16px;
-		position: relative;
-		text-align: center;
-		border-radius: 16px;
-		display: inline-flex;
-		box-shadow: 0 8px #000000ff;
-		background-color: #ffffffff;
-		outline: 2px solid #000000ff;
-	}
-	& .column { float: left; }
-	& .btn {
-		width: 200px;
-		height: 200px;
-		cursor: pointer;
-		transition: 0.08s;
-		border-radius: 16%;
-		margin: 16px 6px 16px 6px;
-		box-shadow: 0 8px #000000ff;
-		outline: 2px solid #000000ff;
-		&:active {
-			transform: translateY(4px);
-			box-shadow: 0 3px #000000ff;
-		}
-	}
-	& #btn-top-left {
-		background-color: #dbe4eeff;
-		border-radius: 96% 16% 96% 16%;
-	}
-	& #btn-top-right {
-		background-color: #81a4cdff;
-		border-radius: 16% 96% 16% 96%;
-	}
-	& #btn-bttm-left {
-		background-color: #255799ff; /* UCI Blue */
-		border-radius: 16% 96% 16% 96%;
-	}
-	& #btn-bttm-right {
-		background-color: #3e7cb1ff;
-		border-radius: 96% 16% 96% 16%;
-	}
-	& .game-over {
-		color: #000000ff !important;
-		background-color: #ffffffff !important;
-	}
-	& .pressed {
-		opacity: 1;
-		transform: translateY(4px);
-		box-shadow: 0 4px #000000ff;
-	}
 }
 
 /* Media queries */
