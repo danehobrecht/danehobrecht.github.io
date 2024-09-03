@@ -314,6 +314,22 @@ nav {
 
 @media screen and (min-width: 359px) and (max-width: 440px) { .shortcut { display: none; } }
 
+@media screen and (min-width: 240px) and (max-width: 415px) {
+	#peter-says
+		#demonstration {
+			& .btn {
+				width: 136px;
+				height: 136px;
+			}
+			& img { width: 96px; }
+			& #score {
+				width: 36px;
+				font-size: 1rem;
+			}
+		}
+	}
+}
+
 @media print {
 	.print { display: block; }
 	.no-print { display: none; }
