@@ -199,12 +199,12 @@ nav {
 		margin: 0px 0px 16px 0px;
 		text-align: center;
 		& .container {
-			margin: 0px auto 24px auto;
 			padding: 16px;
 			position: relative;
 			text-align: center;
 			border-radius: 16px;
 			display: inline-flex;
+			margin: 0px auto 24px auto;
 			box-shadow: 0 8px #000000ff;
 			background-color: #ffffffff;
 			outline: 2px solid #000000ff;
@@ -276,12 +276,12 @@ nav {
 			margin: 8px;
 			width: 240px;
 			height: 120px;
+			font-size: 1.08rem;
 			align-items: center;
 			border-radius: 16px;
 			display: inline-flex;
 			justify-content: center;
 			background-color: #ffffffff;
-			font-size: 1.08rem;
 			outline: 2px dashed #000000ff;
 			& .led {
 				width: 24px;
@@ -293,15 +293,25 @@ nav {
 		}
 	}
 	& h1 {
-		font-weight: normal;
 		margin: 0.67em;
 		font-size: 2.16rem;
+		font-weight: normal;
+	}
+	& details {
+		margin: 8px;
+		padding: 4px;
+		border-radius: 16px;
+		outline-offset: 8px;
+		outline: 2px solid black;
 	}
 	& h2, summary {
 		font-size: 1.32em;
 		font-family: "HOUSE3009";
 	}
-	& footer { text-align: center; }
+	& footer {
+		margin-top: 32px;
+		text-align: center;
+	}
 }
 
 /* Media queries */
