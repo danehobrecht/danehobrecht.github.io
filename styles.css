@@ -194,7 +194,7 @@ nav {
 			& a { color: #000000ff; }
 		}
 	}
-	#demonstration {
+	& #demonstration {
 		padding: 0px;
 		margin: 0px 0px 16px 0px;
 		text-align: center;
@@ -315,17 +315,12 @@ nav {
 			padding: 4px;
 			border-radius: 50%;
 			background-color: #ffffffff;
-			border: 2px solidc #000000ff;
-		}
-		& tr {
-			
+			border: 2px solid #000000ff;
 		}
 		& th {
+			padding: 8px;
 			font-weight: normal;
-			padding: 16px;
-			& b {
-				font-family: "HOUSE3009";
-			}
+			& b { font-family: "HOUSE3009"; }
 		}
 	}
 	& footer {
@@ -344,8 +339,8 @@ nav {
 
 @media screen and (min-width: 359px) and (max-width: 440px) { .shortcut { display: none; } }
 
-@media screen and (min-width: 240px) and (max-width: 415px) {
-	#peter-says
+@media screen and (min-width: 240px) and (max-width: 768px) {
+	#peter-says {
 		#demonstration {
 			& .btn {
 				width: 136px;
@@ -357,6 +352,9 @@ nav {
 				font-size: 1rem;
 			}
 		}
+	#introductions {
+		& th { display: table-row; }
+		& .headshot { width: 196px; }
 	}
 }
 
