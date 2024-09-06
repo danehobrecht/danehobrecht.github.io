@@ -355,9 +355,7 @@ nav {
 	#introductions {
 		& th {
 			display: table-row;
-			& * {
-				text-align: center;
-			}
+			& * { text-align: center; }
 		}
 		& .headshot { width: 196px; }
 	}
