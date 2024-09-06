@@ -353,7 +353,12 @@ nav {
 			}
 		}
 	#introductions {
-		& th { display: table-row; }
+		& th {
+			display: table-row;
+			& * {
+				text-align: center;
+			}
+		}
 		& .headshot { width: 196px; }
 	}
 }
