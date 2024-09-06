@@ -312,7 +312,10 @@ nav {
 		margin: auto;
 		& .headshot {
 			width: 164px;
+			padding: 4px;
 			border-radius: 50%;
+			background-color: #ffffffff;
+			border: 2px solidc #000000ff;
 		}
 		& tr {
 			
