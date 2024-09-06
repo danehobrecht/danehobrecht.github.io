@@ -308,6 +308,23 @@ nav {
 		font-size: 1.32em;
 		font-family: "HOUSE3009";
 	}
+	& #introductions {
+		margin: auto;
+		& .headshot {
+			width: 164px;
+			border-radius: 50%;
+		}
+		& tr {
+			
+		}
+		& th {
+			font-weight: normal;
+			padding: 16px;
+			& b {
+				font-family: "HOUSE3009";
+			}
+		}
+	}
 	& footer {
 		margin-top: 32px;
 		text-align: center;
