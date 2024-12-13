@@ -328,6 +328,50 @@ nav {
 	& footer { margin-bottom: 16px; }
 }
 
+#pfm {
+	/* Globals */
+	font-family: Arial;
+	* { all: revert; }
+	& header {
+		margin: auto;
+		max-width: 640px;
+	}
+	& h1 { font-size: 1.48rem; }
+	& h2 {
+		font-size: 1.24rem;
+		font-family: monospace;
+	}
+	& #bop {
+		width: 320px;
+		height: auto;
+		margin: auto;
+		font-size: 0.64rem;
+		& a {
+			display: block;
+			& img {
+				width: 100%;
+				vertical-align: bottom;
+			}
+			&:focus { outline-offset: 4px; }
+		}
+	}
+	& #first-example { padding-right: 15px; }
+	& .code {
+		margin-bottom: 16px;
+		display: inline-block;
+		& pre {
+			margin: 0;
+			tab-size: 4;
+			padding: 8px;
+			text-align: left;
+			border-radius: 4px;
+			display: inline-block;
+			border: 2px solid lightgray;
+			background-color: #ffffffff;
+		}
+	}
+}
+
 /* Media queries */
 
 @media screen and (max-width: 359px) { pre { font-size: 0.72rem; } }
