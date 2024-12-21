@@ -78,7 +78,10 @@ nav {
 	text-decoration: none;
 }
 
-.v-list { margin-left: -16px; }
+.v-list {
+	margin-left: -16px;
+	& li:not(:last-child) { margin-bottom: 8px; }
+}
 
 .h-list {
 	margin-left: -40px;
