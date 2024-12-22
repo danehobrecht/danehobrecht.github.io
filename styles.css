@@ -409,6 +409,12 @@ nav {
 }
 
 @media print {
-	.print { display: block; }
+	.print {
+		display: block;
+		& a {
+			font-weight: normal;
+			font-family: initial;
+		}
+	}
 	.no-print { display: none; }
 }
