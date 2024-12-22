@@ -64,7 +64,10 @@ nav {
 
 .print { display: none; }
 
-.passive { color: #666666ff; font-weight: normal; }
+.passive {
+	color: #666666ff;
+	font-weight: normal;
+}
 
 .disabled { pointer-events: none; }
 
@@ -121,7 +124,7 @@ nav {
 	margin: 16px 0px -16px 0px;
 	& figure {
 		margin: auto;
-		& a { &:hover { opacity: 1; } }
+		& a:hover { opacity: 1; }
 		& img {
 			width: 92vw;
 			height: auto;
