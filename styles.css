@@ -113,9 +113,9 @@ nav {
 .h-list {
 	margin-left: -40px;
 	& li {
+		display: inline;
 		position: relative;
 		font-size: 0.92rem;
-		display: inline-block;
 		font-family: monospace, Lucida Console, Courier New;
 		&:before { content: "\00a0\2022\00a0"; }
 		&:first-of-type:before { content: ''; }
