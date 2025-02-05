@@ -189,6 +189,7 @@ nav {
 }
 
 #terminal {
+	margin-top: 16px;
 	border: 2px groove;
 	font-size: 0.92rem;
 	box-sizing: border-box;
