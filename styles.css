@@ -414,6 +414,7 @@ nav {
 @media screen and (min-width: 359px) and (max-width: 440px) { .shortcut { display: none; } }
 
 @media screen and (min-width: 240px) and (max-width: 768px) {
+	.h-list { & li { word-break: break-all; } }
 	#peter-says {
 		#demonstration {
 			& .btn {
