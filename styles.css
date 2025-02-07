@@ -111,10 +111,15 @@ nav {
 }
 
 .logo {
-	width: 32px;
-	height: 32px;
-	padding: 1.66px;
-	vertical-align: middle;
+	margin-right: 4px;
+	& a {
+		& img {
+			width: 32px;
+			height: 32px;
+			padding: 1.66px;
+			vertical-align: middle;
+		}
+	}
 }
 
 .v-list {
