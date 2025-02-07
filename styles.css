@@ -26,8 +26,7 @@ p { & a { font-weight: normal; } } /* Link formatting for "LICENSES, CERTIFICATI
 
 hr {
 	border: 0;
-	height: 1.66px;
-	background: #000000ff;
+	border-top: 1.66px solid #000000ff;
 }
 
 h1 { margin: 0; }
