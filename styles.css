@@ -72,19 +72,17 @@ nav {
 
 /* Classes and IDs */
 
+.vint-border {
+	display: inline-block;
+	border: 3px double #000000ff;
+}
+
 .logo {
 	width: 32px;
 	height: 32px;
 	padding: 1.66px;
 	user-select: none;
-	pointer-events; none;
 	vertical-align: middle;
-	border: 3px double #000000ff;
-}
-
-.company-detail {
-	display: inline-block;
-	* { margin: 0px; }
 }
 
 .print { display: none; }
@@ -149,13 +147,12 @@ nav {
 	margin: 16px 0px -16px 0px;
 	& figure {
 		margin: auto;
-		& a:hover { opacity: 1; }
 		& img {
 			width: 92vw;
 			height: auto;
 			padding: 4px;
 			max-width: 540px;
-			border: 4px double #000000ff;
+			vertical-align: middle;
 		}
 		& figcaption {
 			margin-top: 8px;
@@ -167,6 +164,7 @@ nav {
 			margin-left: auto;
 			margin-right: auto;
 		}
+		& .vint-border { border: 4px double #000000ff; }
 	}
 }
 
@@ -443,5 +441,5 @@ nav {
 			font-family: initial;
 		}
 	}
-	.no-print { display: none; }
+	.no-print { display: none !important; }
 }
