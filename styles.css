@@ -74,6 +74,28 @@ nav {
 
 /* Classes and IDs */
 
+.no-print { display: auto; }
+
+.disabled { pointer-events: none; }
+
+.shortcut { margin: 8px auto 24px auto; }
+
+.print { display: none; }
+
+.h-list {
+	margin-left: -40px;
+	& li {
+		display: inline;
+		position: relative;
+		font-size: 0.92rem;
+		font-family: monospace, Lucida Console, Courier New;
+		&:before { content: "\00a0\2022\00a0"; }
+		&:first-of-type:before { content: ''; }
+	}
+}
+
+.submodule { break-inside: avoid; }
+
 .vint-border {
 	display: inline-block;
 	border: 3px double #000000ff;
@@ -87,40 +109,20 @@ nav {
 	vertical-align: middle;
 }
 
-.print { display: none; }
+.v-list {
+	margin-left: -16px;
+	& li:not(:last-child) { margin-bottom: 8px; }
+}
 
 .passive {
 	color: #666666ff;
 	font-weight: normal;
 }
 
-.disabled { pointer-events: none; }
-
-.no-print { display: auto; }
-
-.shortcut { margin: 8px auto 24px auto; }
-
 .jump-scroll {
 	margin-bottom: 16px;
 	display: inline-block;
 	text-decoration: none;
-}
-
-.v-list {
-	margin-left: -16px;
-	& li:not(:last-child) { margin-bottom: 8px; }
-}
-
-.h-list {
-	margin-left: -40px;
-	& li {
-		display: inline;
-		position: relative;
-		font-size: 0.92rem;
-		font-family: monospace, Lucida Console, Courier New;
-		&:before { content: "\00a0\2022\00a0"; }
-		&:first-of-type:before { content: ''; }
-	}
 }
 
 #not-found {
@@ -192,6 +194,7 @@ nav {
 #terminal {
 	margin-top: 16px;
 	font-size: 0.92rem;
+	break-inside: avoid;
 	box-sizing: border-box;
 	padding: 0px 8px 0px 8px;
 	border: 1.66px solid #000000ff;
@@ -202,7 +205,7 @@ nav {
 		margin-top: -16px;
 		text-shadow: 0.08px 0 0, 0 0.08px 0, 0 -0.08px 0, -0.08px 0 0;
 	}
-	.project { * { margin: 8px 0px 8px 0px; } }
+	.submodule { * { margin: 8px 0px 8px 0px; } }
 }
 
 /* "Peter Says" */
@@ -443,5 +446,5 @@ nav {
 			font-family: initial;
 		}
 	}
-	.no-print { display: none !important; }
+	.no-print { display: none; }
 }
