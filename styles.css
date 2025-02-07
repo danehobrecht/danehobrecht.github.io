@@ -131,6 +131,13 @@ nav {
 	margin-bottom: 24px;
 }
 
+#greeting {
+	& h3 {
+		margin: 16px;
+		display: block;
+	}
+}
+
 #name {
 	display: inline-block;
 	text-decoration: none;
@@ -198,13 +205,13 @@ nav {
 	padding: 0px 8px 0px 8px;
 	border: 1.66px solid #000000ff;
 	font-family: monospace, Lucida Console, Courier New;
-	b { color: #000000ff; }
-	a { white-space: normal; }
-	pre {
+	& b { color: #000000ff; }
+	& a { white-space: normal; }
+	& pre {
 		margin-top: -16px;
 		text-shadow: 0.08px 0 0, 0 0.08px 0, 0 -0.08px 0, -0.08px 0 0;
 	}
-	.submodule { * { margin: 8px 0px 8px 0px; } }
+	& .submodule { * { margin: 8px 0px 8px 0px; } }
 }
 
 /* "Peter Says" */
