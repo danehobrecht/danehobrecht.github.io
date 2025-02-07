@@ -191,8 +191,8 @@ nav {
 		height: 24px;
 	}
 	& a {
+		margin-right: 8px;
 		display: inline-block;
-		margin: 0px 4px 0px 4px;
 	}
 	& * { vertical-align: middle; }
 }
