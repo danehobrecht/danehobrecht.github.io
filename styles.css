@@ -87,7 +87,15 @@ nav {
 
 .disabled { pointer-events: none; }
 
-.shortcut { margin: 8px auto 24px auto; }
+.shortcut {
+	& pre {
+		margin: 8px auto 24px auto;
+	}
+	& p {
+		display: none;
+		margin-bottom: 32px;
+	}
+}
 
 .print { display: none; }
 
@@ -439,7 +447,14 @@ nav {
 
 @media screen and (min-width: 360px) and (max-width: 400px) { pre { font-size: 0.84rem; } }
 
-@media screen and (min-width: 359px) and (max-width: 440px) { .shortcut { display: none; } }
+@media screen and (max-width: 811px) { /* Tablet resolution */
+	.shortcut {
+		& p { display: block; }
+		& pre {
+			display: none;
+		}
+	}
+}
 
 @media screen and (min-width: 240px) and (max-width: 768px) {
 	.h-list { & li { word-break: break-all; } }
