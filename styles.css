@@ -87,7 +87,7 @@ nav {
 
 .disabled { pointer-events: none; }
 
-.shortcut {
+.prompt-print {
 	& pre {
 		margin: 8px auto 24px auto;
 	}
@@ -448,7 +448,7 @@ nav {
 @media screen and (min-width: 360px) and (max-width: 400px) { pre { font-size: 0.84rem; } }
 
 @media screen and (max-width: 811px) { /* Tablet resolution */
-	.shortcut {
+	.prompt-print {
 		& p { display: block; }
 		& pre {
 			display: none;
