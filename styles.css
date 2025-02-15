@@ -95,6 +95,10 @@ nav {
 		display: none;
 		margin-bottom: 32px;
 	}
+	& img {
+		width: 12px;
+		height: 12px;
+	}
 }
 
 .print { display: none; }
@@ -450,9 +454,7 @@ nav {
 @media screen and (max-width: 811px) { /* Tablet resolution */
 	.prompt-print {
 		& p { display: block; }
-		& pre {
-			display: none;
-		}
+		& pre { display: none; }
 	}
 }
 
@@ -487,4 +489,13 @@ nav {
 		}
 	}
 	.no-print { display: none; }
+}
+
+@-moz-document url-prefix() { /* Firefox browser rules */
+	.prompt-print {
+		& img {
+			width: 9.6px !important;
+			height: 9.6px !important;
+		}
+	}
 }
