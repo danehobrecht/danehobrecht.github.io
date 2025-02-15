@@ -451,7 +451,7 @@ nav {
 
 @media screen and (min-width: 360px) and (max-width: 400px) { pre { font-size: 0.84rem; } }
 
-@media screen and (max-width: 811px) { /* Tablet resolution */
+@media screen and (max-width: 720px) { /* Rudimentary tablet accommodation */
 	.prompt-print {
 		& p { display: block; }
 		& pre { display: none; }
