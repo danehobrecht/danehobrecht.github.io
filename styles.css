@@ -26,7 +26,7 @@ p { & a { font-weight: normal; } } /* Link formatting for "LICENSES, CERTIFICATI
 
 hr {
 	border: 0;
-	border-top: 1.66px solid #000000ff; /* Must be `1.66px` to prevent visual artifcating */
+	border-top: 2px solid #000000ff; /* `1.66px` to prevent visual artifcating */
 }
 
 h1 { margin: 0; }
@@ -160,7 +160,7 @@ nav {
 #greeting {
 	& .vint-border {
 		margin-top: 16px;
-		border: 4px double #000000ff;
+		border: 5px double #000000ff;
 	}
 	& h3 {
 		margin: 16px;
@@ -204,7 +204,7 @@ nav {
 			margin-left: auto;
 			margin-right: auto;
 		}
-		& .vint-border { border: 4px double #000000ff; }
+		& .vint-border { border: 5px double #000000ff; }
 	}
 }
 
@@ -233,7 +233,7 @@ nav {
 	break-inside: avoid;
 	box-sizing: border-box;
 	padding: 0px 8px 0px 8px;
-	border: 1.66px solid #000000ff;
+	border: 2px solid #000000ff;
 	font-family: monospace, Lucida Console, Courier New;
 	& b { color: #000000ff; }
 	& a { white-space: normal; }
@@ -504,4 +504,10 @@ nav {
 		}
 	}
 	/* img { transform: scale(0.5, 0.5); } */
+	#greeting {
+		& .vint-border { border-width: 4px; }
+	}
+	#portfolio {
+		& .vint-border { border-width: 4px; }
+	}
 }
