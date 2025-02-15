@@ -128,7 +128,7 @@ nav {
 		& img {
 			width: 32px;
 			height: 32px;
-			padding: 1.66px;
+			padding: 2px;
 			vertical-align: middle;
 		}
 	}
@@ -498,4 +498,10 @@ nav {
 			height: 9.6px !important;
 		}
 	}
+	.logo {
+		& a {
+			& img { padding: 1.66px; }
+		}
+	}
+	/* img { transform: scale(0.5, 0.5); } */
 }
