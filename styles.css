@@ -55,6 +55,7 @@ img {
 	-webkit-user-select: none;
 	-webkit-touch-callout: none;
 		/***/
+	image-rendering: -webkit-optimize-contrast; /* Fix blur on Chromium browsers */
 }
 
 pre {
