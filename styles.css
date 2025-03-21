@@ -211,6 +211,10 @@ nav {
 
 #headshot {
 	padding: 4px;
+	/* Full-resolution on Chrome
+	 * width: auto;
+	 * height: auto;
+	 */
 	max-width: 216px;
 	vertical-align: middle;
 }
