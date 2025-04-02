@@ -89,6 +89,14 @@ details {
 	& summary { margin-bottom: 12px; }
 }
 
+details[open] {
+	cursor: auto;
+	& summary {
+		display: none;
+		pointer-events: none;
+	}
+}
+
 /* Classes and IDs */
 
 .no-print { display: auto; }
