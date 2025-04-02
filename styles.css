@@ -82,6 +82,13 @@ nav {
 	}
 }
 
+details {
+	width: auto;
+	display: inline-block;
+	&:hover { cursor: pointer; }
+	& summary { margin-bottom: 12px; }
+}
+
 /* Classes and IDs */
 
 .no-print { display: auto; }
