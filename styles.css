@@ -83,10 +83,13 @@ nav {
 }
 
 details {
-	width: auto;
 	display: inline-block;
-	&:hover { cursor: pointer; }
-	& summary { margin-bottom: 12px; }
+	& summary {
+		width: 32px;
+		cursor: pointer;
+		user-select: none;
+		margin-bottom: 12px;
+	}
 }
 
 /* Classes and IDs */
