@@ -390,7 +390,7 @@ details {
 		text-align: left;
 		border-radius: 16px;
 		outline-offset: 8px;
-		outline: 2px solid black;
+		outline: 2px solid #000000ff;
 	}
 	& h2, summary {
 		font-size: 1.32em;
@@ -452,7 +452,7 @@ details {
 			text-align: left;
 			border-radius: 4px;
 			display: inline-block;
-			border: 2px solid lightgray;
+			border: 2px solid #666666ff;
 			background-color: #ffffffff;
 		}
 	}
