@@ -198,6 +198,8 @@ details {
 	margin: 16px 0px -16px 0px;
 	& figure {
 		margin: auto;
+		padding-bottom: 32px;
+		&:last-child { padding-bottom: 16px; }
 		& img {
 			width: 92vw;
 			height: auto;
@@ -206,14 +208,15 @@ details {
 			vertical-align: middle;
 		}
 		& figcaption {
-			margin-top: 8px;
+			margin-top: 16px;
 			font-size: 1.08rem;
+			font-family: monospace, Lucida Console, Courier New;
 			& a { &:hover { opacity: 0.64; } }
 		}
 		& blockquote {
 			max-width: 540px;
-			margin-left: auto;
-			margin-right: auto;
+			margin: auto;
+			margin-top: 12px;
 		}
 		& .vint-border { border: 5px double #000000ff; }
 	}
@@ -276,6 +279,13 @@ details {
 			margin-bottom: 24px;
 			font-family: "HOUSE3009";
 			& a { color: #000000ff; }
+		}
+	}
+	& details {
+		all: revert;
+		& summary {
+			width: auto;
+			margin-bottom: 0px;
 		}
 	}
 	& #demonstration {
