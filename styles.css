@@ -184,44 +184,6 @@ details {
 	text-decoration: none;
 }
 
-#resume {
-	margin: auto;
-	max-width: 768px;
-	text-align: left;
-	& h1 {
-		padding-top: 8px;
-		font-size: 2.4rem;
-	}
-}
-
-#portfolio {
-	margin: 16px 0px -16px 0px;
-	& figure {
-		margin: auto;
-		padding-bottom: 32px;
-		&:last-child { padding-bottom: 16px; }
-		& img {
-			width: 92vw;
-			height: auto;
-			padding: 4px;
-			max-width: 540px;
-			vertical-align: middle;
-		}
-		& figcaption {
-			margin-top: 16px;
-			font-size: 1.08rem;
-			font-family: monospace, Lucida Console, Courier New;
-			& a { &:hover { opacity: 0.64; } }
-		}
-		& blockquote {
-			max-width: 540px;
-			margin: auto;
-			margin-top: 12px;
-		}
-		& .vint-border { border: 5px double #000000ff; }
-	}
-}
-
 #headshot {
 	padding: 4px;
 	/* Full-resolution on Chrome
@@ -243,6 +205,18 @@ details {
 		display: inline;
 	}
 	& * { vertical-align: middle; }
+}
+
+#blog {}
+
+#resume {
+	margin: auto;
+	max-width: 768px;
+	text-align: left;
+	& h1 {
+		padding-top: 8px;
+		font-size: 2.4rem;
+	}
 }
 
 #terminal {
@@ -535,9 +509,6 @@ details {
 	}
 	/* img { transform: scale(0.5, 0.5); } */
 	#greeting {
-		& .vint-border { border-width: 4px; }
-	}
-	#portfolio {
 		& .vint-border { border-width: 4px; }
 	}
 }
