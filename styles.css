@@ -210,10 +210,12 @@ details {
 	max-width: 768px;
 	text-align: left;
 	padding-top: 12px;
-	& h1 {
-		font-size: 1.48rem;
+	& hgroup {
 		text-align: center;
-		font-weight: normal;
+		& h1 {
+			font-size: 1.48rem;
+			font-weight: normal;
+		}
 	}
 	& h2 {
 		font-size: 1.08rem;
