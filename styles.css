@@ -199,8 +199,8 @@ details {
 		height: 24px;
 	}
 	& a {
-		margin-right: 12px;
 		display: inline;
+		margin-right: 12px;
 	}
 	& * { vertical-align: middle; }
 }
@@ -517,6 +517,12 @@ details {
 		& a {
 			font-weight: normal;
 			font-family: initial;
+		}
+		& h1 { margin-top: -8px; } /* Offset to vertically center QR code with title module */
+		& img {
+			top: 0;
+			right: 0;
+			position: absolute;
 		}
 	}
 	.no-print { display: none; }
