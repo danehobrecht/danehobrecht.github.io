@@ -175,12 +175,12 @@ details {
 
 #greeting {
 	& .vint-border {
-		margin-top: 16px;
+		margin: 16px 0px 4px 0px;
 		border: 5px double #000000ff;
 	}
 	& h3 {
-		margin: 16px;
 		display: block;
+		& ul { margin-bottom: 8px; }
 	}
 }
 
@@ -201,6 +201,7 @@ details {
 
 #socials {
 	font-size: 0; /* Remove whitespace between image anchor links */
+	padding-top: 4px;
 	& img {
 		width: 24px;
 		height: 24px;
