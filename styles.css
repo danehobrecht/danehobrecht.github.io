@@ -243,6 +243,11 @@ details {
 	}
 }
 
+#valid-rss-rogers {
+	display: block;
+	padding-top: 36px;
+}
+
 #resume {
 	margin: auto;
 	max-width: 768px;
