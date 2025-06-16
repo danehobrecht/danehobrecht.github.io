@@ -34,9 +34,7 @@ h1 { margin: 0; }
 h1, h2 { font-size: 1.2rem; }
 
 h3 {
-	margin-top: 0px;
 	font-size: 1.08rem;
-	margin-bottom: 0px;
 	font-weight: normal;
 	display: inline-block;
 }
