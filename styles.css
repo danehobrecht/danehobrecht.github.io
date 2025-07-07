@@ -34,10 +34,10 @@ h1 { margin: 0; }
 h1, h2 { font-size: 1.2rem; }
 
 h3 {	
-	margin: auto;
 	font-size: 1.08rem;
 	font-weight: normal;
 	display: inline-block;
+	margin: auto auto auto 2px;
 }
 
 h4 {
@@ -179,8 +179,7 @@ details {
 	}
 	& h3 {
 		display: block;
-		margin-top: 16px;	
-		margin-bottom: 8px;
+		margin: 16px auto 8px auto;
 		& ul { margin-bottom: 8px; }
 	}
 }
