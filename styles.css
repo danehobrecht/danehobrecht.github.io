@@ -231,6 +231,11 @@ details {
 		margin: 16px 0px 8px 0px;
 	}
 	& hr { margin: 16px auto 0px auto; }
+	& img {
+		margin: auto;
+		display: block;
+		max-width: 100%;
+	}
 	& pre {
 		all: initial;
 		white-space: pre-wrap;
