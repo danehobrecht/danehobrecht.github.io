@@ -137,13 +137,6 @@ details {
 	border: 3px double #000000ff;
 }
 
-.poi {
-	font-size: 1rem;
-	line-height: 0.7;
-	padding: 0px 2.21px 0px 2.21px;
-	font-family: "Noto Sans Symbols";
-}
-
 .logo {
 	margin-right: 4px;
 	& a {
