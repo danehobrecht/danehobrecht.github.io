@@ -10,10 +10,10 @@
 		<managingEditor>dhobrech@uci.edu (Dane Hobrecht)</managingEditor>
 		<atom:link href="https://danehobrecht.github.io/rss.xml" rel="self" type="application/rss+xml"/>
 		<item>
-			<title>INSTRUCTION</title>
-			<link>https://danehobrecht.github.io/blog.html#instruction</link>
-			<pubDate>Thu, 4 Sep 2025 22:29:15 PDT</pubDate>
-			<guid>https://danehobrecht.github.io/blog.html#instruction</guid>
+			<title>MAN</title>
+			<link>https://danehobrecht.github.io/blog.html#man</link>
+			<pubDate>Mon, 1 Dec 2025 19:34:53 PDT</pubDate>
+			<guid>https://danehobrecht.github.io/blog.html#man</guid>
 		</item>
 		<item>
 			<title>CAVENDISH LAB</title>
@@ -26,6 +26,12 @@
 			<link>https://danehobrecht.github.io/blog.html#peter</link>
 			<pubDate>Mon, 1 Dec 2025 19:34:53 PDT</pubDate>
 			<guid>https://danehobrecht.github.io/blog.html#peter</guid>
+		</item>
+		<item>
+			<title>INSTRUCTION</title>
+			<link>https://danehobrecht.github.io/blog.html#instruction</link>
+			<pubDate>Thu, 4 Sep 2025 22:29:15 PDT</pubDate>
+			<guid>https://danehobrecht.github.io/blog.html#instruction</guid>
 		</item>
 		<item>
 			<title>JESUS OF NAZARETH</title>
