@@ -91,9 +91,8 @@ iframe {
 }
 
 details {
-	display: inline-block;
 	& summary {
-		width: 32px;
+		width: 36px;
 		cursor: pointer;
 		user-select: none;
 		margin-bottom: 12px;
