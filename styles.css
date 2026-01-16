@@ -531,10 +531,12 @@ details {
 
 @media print {
 	a { text-decoration: none; }
-	details { display: none; }
-	details[open] {
-		display: block;
+	details {
 		& summary { display: none; }
+	}
+	::details-content {
+		height: auto !important;
+		content-visibility: visible;
 	}
 	.print {
 		display: block;
