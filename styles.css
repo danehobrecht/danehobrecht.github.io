@@ -33,11 +33,11 @@ h1 { margin: 0; }
 
 h1, h2 { font-size: 1.2rem; }
 
-h3 {	
+h3 {
 	font-size: 1.08rem;
 	font-weight: normal;
 	display: inline-block;
-	margin: auto auto auto 2px;
+	margin: auto auto auto 6px;
 }
 
 h4 {
@@ -145,7 +145,6 @@ details {
 			width: 32px;
 			height: 32px;
 			padding: 2px;
-			margin-right: 4px;
 			vertical-align: middle;
 		}
 	}
