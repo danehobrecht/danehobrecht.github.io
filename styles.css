@@ -101,11 +101,6 @@ details {
 
 /* Classes and IDs */
 
-.LORD {
-	display: inline;
-	font-family: "Times New Roman", serif;
-}
-
 .no-print { display: auto; }
 
 .disabled { pointer-events: none; }
@@ -245,6 +240,10 @@ details {
 	& pre {
 		all: initial;
 		white-space: pre-wrap;
+		& .LORD {
+			display: inline;
+			font-family: "Times New Roman", serif;
+		}
 	}
 	& time {
 		display: block;
