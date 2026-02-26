@@ -101,7 +101,10 @@ details {
 
 /* Classes and IDs */
 
-.LORD { font-family: "Times New Roman", serif; }
+.LORD {
+	display: inline;
+	font-family: "Times New Roman", serif;
+}
 
 .no-print { display: auto; }
 
