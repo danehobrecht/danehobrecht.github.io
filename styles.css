@@ -252,9 +252,10 @@ details {
 
 #books {
 	margin: auto;
-	max-width: 768px;
+	max-width: 480px;
 	text-align: left;
 	padding-top: 12px;
+	& p { margin-top: 0px; }
 	& hgroup {
 		text-align: center;
 		& h1 {
@@ -263,19 +264,24 @@ details {
 		}
 	}
 	& h2 {
-		font-size: 1.08rem;
+		font-size: 1.2rem;
 		text-align: center;
-		margin: 16px 0px 8px 0px;
+		margin: 16px 0px 16px 0px;
 	}
-	& hr { margin: 16px auto 0px auto; }
-	& img {
-		margin: auto;
-		display: block;
-		max-width: 100%;
-	}
+	& hr { margin: 0px auto 0px auto; }
 	& pre {
 		all: initial;
 		white-space: pre-wrap;
+		& p {
+			margin-top: 0px;
+			text-align: center;
+			& a { text-decoration: none; }
+		}
+		& img {
+			margin: auto;
+			display: block;
+			max-width: 64%;
+		}
 	}
 	& time {
 		display: block;
@@ -283,6 +289,7 @@ details {
 		margin-bottom: 16px;
 		font-family: monospace, Lucida Console, Courier New;
 	}
+	& article { text-align: center; }
 }
 
 #valid-rss-rogers {
