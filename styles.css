@@ -240,6 +240,7 @@ details {
 	& pre {
 		all: initial;
 		white-space: pre-wrap;
+		& .LORD { font-family: "Times New Roman", serif; }
 	}
 	& time {
 		display: block;
