@@ -129,7 +129,7 @@ details {
 	}
 }
 
-.submodule { break-inside: avoid; }
+.submodule { break-inside: auto; }
 
 .vint-border {
 	display: inline-block;
@@ -314,7 +314,7 @@ details {
 #terminal {
 	margin-top: 16px;
 	font-size: 0.92rem;
-	break-inside: avoid;
+	break-inside: auto;
 	box-sizing: border-box;
 	padding: 0px 8px 0px 8px;
 	border: 2px solid #000000ff;
