@@ -137,7 +137,7 @@ details {
 }
 
 .company {
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	& a {
 		& img {
