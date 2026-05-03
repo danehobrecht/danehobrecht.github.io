@@ -254,8 +254,6 @@ details {
 	margin: auto;
 	max-width: 480px;
 	text-align: left;
-	padding-top: 12px;
-	& p { margin-top: 12px; }
 	& hgroup {
 		text-align: center;
 		& h1 {
@@ -280,6 +278,7 @@ details {
 			display: inline-block;
 		}
 		& p {
+			margin-top: 12px;
 			text-align: center;
 			& a {
 				width: initial;
