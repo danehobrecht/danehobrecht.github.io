@@ -119,6 +119,12 @@ details {
 
 .print { display: none; }
 
+.vr {
+	color: #666666ff;
+	font-size: 1.32rem;
+	margin: -10px 0px -10px -1px;
+}
+
 .hl {
 	margin-left: -40px;
 	& li {
